@@ -50,9 +50,31 @@ tr:nth-child(even){
 
 /*Highlights the definition when the list item is selected.*/
 dt:hover + dd {
-  background-color:purple;
+  background-color:purple; font-style: bold;
 }
 
-h1 {
+h1, {
   border: solid thin black; ; 
 }
+
+/*Creates a div that takes up 3/4 of the page width, has a space of 20px between it and the previous element
+and has a class of 'outer-content'*/
+div.outer-content{
+  background-color: #FF69B4; 
+  max-width:75%; margin-top: 20px; 
+  min-height: 200px;
+  text-align: center;
+  
+}
+div.inner-content{
+
+  background-color: blue; margin: 0 auto; width: 75%; text-align: center; 
+  min-height: 100px; 
+
+}
+
+img {
+  float: left;
+}
+
+/*floats the image so that text wraps around it*/
