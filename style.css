@@ -1,0 +1,58 @@
+
+table {
+  border: solid thick; border-collapse: collapse; 
+}
+
+/*Makes the header column background white*/
+table > tbody > tr:first-child > th{
+  background-color: white;
+}
+
+/*Adds a border between every row and removes the margins between the rows*/
+th {
+  border: solid thin black; height: 1.4em; text-align: center; width: 5.5em;
+}
+
+td{
+  border: solid thin black; height: 1.4em; text-align: center; width: 5.5em; 
+}
+
+
+/*Makes the first descriptor column italics*/
+table > tbody > tr > th:first-child {
+  font-style: italic; font-weight: normal;;
+}
+
+/*Makes the first information column red*/
+table > tbody > tr > td:first-of-type{
+ color: red;
+}
+
+/*Makes the third information column blue*/
+table > tbody > tr >td:nth-child(0n+4){
+  color:blue;
+}
+
+/*Makes the footer background white - overrides the tr:nth-child*/
+tfoot tr:last-child{
+  background-color: white;
+}
+
+/*Makes each odd column light green*/
+tr:nth-child(odd){
+  background-color: #8FBC8F;
+}
+
+/*Makes each even column even*/
+tr:nth-child(even){
+  background-color: #87CEFA;
+}
+
+/*Highlights the definition when the list item is selected.*/
+dt:hover + dd {
+  background-color:purple;
+}
+
+h1 {
+  border: solid thin black; ; 
+}
